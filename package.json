@@ -10,11 +10,12 @@
   },
   "dependencies": {
     "bootstrap": "^5.3.3",
-    "scss": "^0.2.4",
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "sass": "^1.74.1",
+    "scss": "^0.2.4",
     "vite": "^5.1.6"
   }
 }

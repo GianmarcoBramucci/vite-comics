@@ -1,8 +1,15 @@
 <template>
     <div class="bg-linck">
         <div class="container d-flex justify-content-center">
-            <div class="left3">
-                
+            <div class="left3 d-flex">
+                <div v-for="linck in linckList" :class="linck.class">
+                    <h6>{{ linck.title }}</h6>
+                    <ul>
+                        <li v-for="lList in linck.list">
+                            {{ lList }}
+                        </li>
+                    </ul>
+                </div>
             </div>
             <div class="right3">     
             </div>
@@ -18,6 +25,7 @@
                 linckList:  [
                     {
                         title: 'DC COMICS',
+                        class: 'd-inline',
                         list: [
                           'Characters',
                             'Comics',
@@ -30,6 +38,7 @@
                     },
                     {
                         title: 'SHOP',
+                        class: 'd-inline',
                         list: [
                             'Shop DC',
                             'Shop DC Collectibles'
@@ -37,6 +46,7 @@
                     },
                     {
                         title: 'DC',
+                        class: 'd-block',
                         list: [
                             'Terms Of Use',
                             'Privacy policy (New)',
@@ -53,6 +63,7 @@
                     },
                     {
                         title: 'SITES',
+                        class: 'd-block',
                         list: [
                             'DC',
                             'MAD Magazine',
@@ -68,6 +79,10 @@
 </script>
 
 <style lang="scss" scoped>
+ul{
+    list-style-type: none;
+    margin: 0;
+}
 .bg-linck{
     background-image: url(/img/footer-bg.jpg);
     background-repeat: no-repeat;
@@ -77,6 +92,7 @@
 .left3{
     width: 50%;
     padding-top: 20px;
+    color: white;
 }
 .right3{
         width: 50%;

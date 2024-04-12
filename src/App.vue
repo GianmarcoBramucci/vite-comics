@@ -1,15 +1,19 @@
 <template>
-  <div class="container">
-      <CompHeader/>
-  </div>
+  <CompHeader/>
+  <CompMain/>
+  <CompFooter/>
 </template>
 
 <script>
    import CompHeader from './components/CompHeader.vue';
+   import CompMain from './components/CompMain.vue';
+   import CompFooter from './components/CompFooter.vue';
   export default {
     name:'App',
     components:{
-      CompHeader
+      CompHeader,
+      CompMain,
+      CompFooter
     }
   }
 </script>

@@ -1,10 +1,12 @@
 <template>
-    <div class="d-flex justify-content-between align-items-center">
-        <div>
-            <img :src="logoSrc" alt="">
-        </div>
-        <div>
-            <CompNav/>
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <img :src="logoSrc" alt="">
+            </div>
+            <div>
+                <CompNav/>
+            </div>
         </div>
 
     </div>
